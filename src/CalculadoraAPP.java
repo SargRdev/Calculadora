@@ -11,6 +11,7 @@ public class CalculadoraAPP {
         var resultado = operando1+operando2;
 
         System.out.println("Resusltado = " + resultado);
+
+        System.out.println("hola");
     }
 }
-hola
