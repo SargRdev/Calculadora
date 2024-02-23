@@ -2,16 +2,34 @@ import java.util.Scanner;
 
 public class CalculadoraAPP {
     public static void main(String[] args) {
-        System.out.println("****Aplicación Calculadora****");
-        System.out.println("Proporciona un valor para el operando 1: ");
         Scanner entrada = new Scanner(System.in);
 
-        var operando1 = Integer.parseInt(entrada.nextLine());
-        var operando2 = 20;
-        var resultado = operando1+operando2;
+        System.out.println("****Aplicación Calculadora****");
+        System.out.println("""
+                1. Sumar
+                2. Restar
+                3. Multiplicar
+                4. Dividir
+                5. Salir""");
 
-        System.out.println("Resusltado = " + resultado);
+        System.out.print("Ingresa un operación: ");
+        var operacion = Integer.parseInt(entrada.nextLine());
 
-        System.out.println("hola");
+        if(operacion >= 1 && operacion <= 4) {
+            switch (operacion) {
+                case 1->{
+                    System.out.print("Proporciona un valor para el operando 1: ");
+
+
+                    var operando1 = Integer.parseInt(entrada.nextLine());
+                    var operando2 = 20;
+                    var resultado = operando1 + operando2;
+
+                    System.out.println("Resultado = " + resultado);
+                }
+
+            }
+
+        }
     }
 }
