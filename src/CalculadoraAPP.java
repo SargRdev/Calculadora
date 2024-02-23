@@ -17,7 +17,7 @@ public class CalculadoraAPP {
 
         if(operacion >= 1 && operacion <= 4) {
             switch (operacion) {
-                case 1->{
+                case 1-> {
                     System.out.print("Proporciona un valor para el operando 1: ");
 
 
@@ -26,6 +26,19 @@ public class CalculadoraAPP {
                     var resultado = operando1 + operando2;
 
                     System.out.println("Resultado = " + resultado);
+
+
+                }
+                case 2-> {
+
+                }
+
+                case 3-> {
+                }
+
+                case 4->  {
+
+
                 }
 
             }
